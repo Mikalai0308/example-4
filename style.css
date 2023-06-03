@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'MADE-Tommy-Soft-Regular';
+    src: url('fonts/MADE-Tommy-Soft-Regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/bg-mobile.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.mobile-logo-nav {
+    position: fixed;
+    z-index: 2;
+    left: -50%;
+    width: 50%;
+    transition: .3s;
+}
+
+.mobile-logo-nav > svg:hover {
+    fill: #f08811;
+}
+
+.menu-btn {
+    fill: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    left: 265%;
+    top: 1rem;
+    position: relative;
+    padding: 1rem;
+}
+
+.left-side-bar {
+    display: none;
+    background-color: #060924;
+    position: relative;
+    height: 65vh;
+    border-bottom-left-radius: 1rem;
+    border: 1px solid white;
+}
+
+.mobile-logo {
+    text-align: center;
+}
+
+.mobile-title {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mobile-nav > ul {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0; 
+}
+
+.mobile-nav > ul > li {
+    list-style: none;
+    margin: 0.5rem 0;
+    
+}
+
+.mobile-nav > ul > li > a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.mobile-nav > ul > li > a:hover {
+    color: #f08811;
+    transition: 0.3s;
+}
+
+.mobile-nav-close {
+    text-align: center;
+}
+
+.mobile-nav-close > svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.mobile-nav-close > svg:hover {
+    fill:white;
+}
+
+.pc-logo-nav {
+    display: none;
+}
+
+span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.new-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.prod-relase {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+}
+
+.prod-vr-img > img {
+    height: 17rem;
+    width: auto;
+}
+
+.prod-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.prod-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: 'Montserrat-Black';
+}
+
+.prod-discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discount-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.discount-text {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.prod-buy-btn {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.prod-buy-btn > svg {
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+}
+
+.prod-buy-btn > svg:hover {
+    fill: #f08811;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    top: 89%;
+    width: 100%;
+    background-color: #060924;
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.footer-social-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-link-icon > a > svg {
+    fill: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+}
+
+.footer-link-icon > a >svg:hover {
+    fill: #f08811;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-logo-nav {
+        display: none;
+    }
+
+    .pc-logo-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        padding-right: 3rem;
+    }
+    .pc-logo > img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .pc-logo-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .pc-title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    }
+    .pc-nav {
+        margin-top: 2rem;
+    }
+    
+    .pc-nav > ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .pc-nav > ul > li {
+        margin-right: 1.5rem;
+    }
+
+    .menu-title {
+        font-size: 1.2rem;
+        color: white;
+        font-family: 'MADE-Tommy-Soft-Regular';
+    }
+
+    .dropdown-menu {
+        display: none;
+        font-size: 1.5rem;
+        background-color: #060924;
+        border: 1px solid rgb(255, 255, 255);
+        position: absolute;
+        z-index: 2;
+    }
+
+    .dropdown-menu > ul {
+        list-style: none;
+        width: 4rem;
+        padding: 1rem;
+        color: white;
+    }
+
+    .dropdown-menu > ul > li > a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    .show-dropdown-menu {
+        display: block;
+    }
+
+    .menu-title:hover {
+        color: #f08811;
+    }
+
+    .discount-title {
+        position: relative;
+    }
+    .prod-relase {
+        margin: 0;
+    }
+
+    .prod-vr-img {
+        position: absolute;
+        right: 5%;
+    }
+
+    .prod-title {
+        text-align: left;
+    }
+    
+    .prod-info {
+        align-items: start;
+    }
+
+    .prod-discount {
+        align-items: flex-start;
+        margin-top: 5rem;
+    }
+
+    .prod-buy-btn {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    body {
+        background-image: url('images/bg.jpg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .new-product {
+        align-items: flex-start;
+    }
+
+    .prod-title {
+        position: relative;
+        font-size: 5rem;
+    }
+
+    .prod-discount {
+        position: absolute;
+        left: 70%;
+    }
+
+    .prod-vr-img {
+        display: none;
+    }
+
+    .prod-buy-btn {
+        margin: 0 2rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 90%;
+        padding: 0 3rem;
+    }
+}
